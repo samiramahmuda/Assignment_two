@@ -23,9 +23,11 @@ header{
 .text-light{
   color: #8987A1;
 }
+.text-orange{
+  color: #E95A08;
+}
 /* nav design */
 .navbar{
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,13 +41,47 @@ header{
   text-decoration: none;
   font-size: 12px;
 }
+/* banner design */
+.banner{
+  margin-top: 120px;
+  display: flex;
+  align-items: end;
+}
+.banner-content{
+  width: 50%;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
 /* media query */
 @media screen and (max-width:576px) {
   /* for navbar */
-  .navbar{
-    max-width: 361px;
+  .navbar,
+  .banner-content
+  {
+    width: 361px;
     margin: 0 auto;
-  }  
+  } 
+  .banner{
+    margin-top: 28px;
+    flex-direction: column-reverse;
+    align-items: self-start; 
+   
+  } 
+ 
+  .banner-title{
+    margin-top: 24px;
+    font-size: 1.5rem;
+  }
+  .banner-description{
+    font-size: .8rem;
+  }
+  .banner-content>img{
+    width: 394px;
+    margin: 0;
+    padding: 0;
+  }
  #nooo,
  #noo,
  #no
